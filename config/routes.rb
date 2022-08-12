@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   # post "todos/create", to: "todos#create"
   # get "todos", to: "todos#index"
   # get "todos/:id", to: "todos#show"
+  get "/" => "home#index"
   resources :todos
   resources :users do
     collection do
